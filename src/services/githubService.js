@@ -10,7 +10,7 @@ export const searchUsers = async (query) => {
         Authorization: `token ${import.meta.env.VITE_APP_GITHUB_API_KEY}`,
       },
     });
-    return response.data.items; // قائمة المستخدمين
+    return response.data.items;
   } catch (error) {
     console.error("Error fetching users:", error);
     return [];
